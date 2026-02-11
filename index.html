@@ -3,26 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Website</title>
+  <title>My Utilities Hub</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       margin: 40px;
-      background: #f7f7f7;
+      background: #f4f6f8;
       color: #333;
     }
     h1 {
       color: #007acc;
+      text-align: center;
+      margin-bottom: 40px;
     }
-    a {
-      color: #0055aa;
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    .card h2 {
+      margin-top: 0;
+      color: #005fa3;
+    }
+    .card p {
+      font-size: 0.95em;
+      color: #555;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 16px;
+      background: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    .card a:hover {
+      background: #005fa3;
+    }
+    .section-title {
+      width: 100%;
+      text-align: left;
+      margin: 30px 0 10px;
+      font-size: 1.2em;
+      color: #444;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is a simple page hosted with <strong>GitHub Pages</strong>.</p>
-  <p><a href="https://azyrerain.github.io/Tbill.html">T bill calculator</a>
-  <p>Edit <code>index.html</code> in your repository to change this content.</p>
+  <h1>My Utilities Hub</h1>
+
+  <div class="section-title">Streamlit Apps</div>
+  <div class="grid">
+    <div class="card">
+      <h2>CPF Life Calculator</h2>
+      <p>Estimate CPF Life payouts with different retirement scenarios.</p>
+      <a href="https://cpflifecalculator.streamlit.app">Launch</a>
+    </div>
+    <div class="card">
+      <h2>PS Lechia</h2>
+      <p>Interactive utility for PSLE Chia study aids.</p>
+      <a href="https://pslechia.streamlit.app">Launch</a>
+    </div>
+    <div class="card">
+      <h2>PDF Unlock</h2>
+      <p>Remove restrictions from PDF files quickly and securely.</p>
+      <a href="https://pdfunlock.streamlit.app">Launch</a>
+    </div>
+  </div>
+
+  <div class="section-title">HTML Utilities</div>
+  <div class="grid">
+    <div class="card">
+      <h2>T-Bill Calculator</h2>
+      <p>Compute Treasury bill yields and returns with ease.</p>
+      <a href="https://azyrerain.github.io/Tbill.html">Launch</a>
+    </div>
+  </div>
 </body>
 </html>
